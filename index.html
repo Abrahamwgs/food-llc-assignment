@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food, LLC | Our Menu</title>
+
+  <!-- Bootstrap 3.3, as required by the course assignment -->
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default" aria-label="Main navigation">
+      <div class="container-fluid navbar-shell">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" aria-label="Food, LLC home">Food, LLC</a>
+
+          <!-- Mobile-only menu button -->
+          <button type="button"
+                  class="navbar-toggle collapsed visible-xs"
+                  data-toggle="collapse"
+                  data-target="#food-menu"
+                  aria-expanded="false"
+                  aria-controls="food-menu"
+                  aria-label="Toggle menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- The menu is visible only on extra-small screens -->
+        <div class="collapse navbar-collapse" id="food-menu">
+          <ul class="nav navbar-nav visible-xs">
+            <li><a href="#chicken">Chicken</a></li>
+            <li><a href="#beef">Beef</a></li>
+            <li><a href="#sushi">Sushi</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-fluid page-content">
+      <h1 class="text-center page-title">Our Menu</h1>
+
+      <!-- Required single, full-width, tall Bootstrap-grid section -->
+      <div class="row">
+        <section class="col-xs-12">
+          <div class="menu-panel" id="our-menu">
+            <div class="section-eyebrow">Freshly prepared • Thoughtfully served</div>
+            <h2>Good food brings us together.</h2>
+            <p class="intro">
+              At Food, LLC, we believe every great meal starts with fresh ingredients,
+              a little creativity, and the joy of sharing something delicious.
+              Explore a few of our kitchen favorites below.
+            </p>
+
+            <div class="menu-feature" id="chicken">
+              <span class="feature-number">01</span>
+              <div>
+                <h3>Chicken</h3>
+                <p>
+                  Tender, carefully seasoned chicken prepared with aromatic herbs,
+                  fresh vegetables, and a bright house-made sauce. Comforting,
+                  satisfying, and full of flavor in every bite.
+                </p>
+                <span class="menu-tag">A house favorite</span>
+              </div>
+            </div>
+
+            <div class="menu-feature" id="beef">
+              <span class="feature-number">02</span>
+              <div>
+                <h3>Beef</h3>
+                <p>
+                  Rich and savory beef, cooked to bring out its natural flavor and
+                  paired with seasonal sides. A hearty choice for anyone who loves
+                  a classic dish made with care.
+                </p>
+                <span class="menu-tag">Rich &amp; satisfying</span>
+              </div>
+            </div>
+
+            <div class="menu-feature" id="sushi">
+              <span class="feature-number">03</span>
+              <div>
+                <h3>Sushi</h3>
+                <p>
+                  A fresh, balanced selection inspired by Japanese cuisine, with
+                  delicate textures, clean flavors, and colorful ingredients.
+                  Simple, elegant, and made to be enjoyed slowly.
+                </p>
+                <span class="menu-tag">Fresh &amp; balanced</span>
+              </div>
+            </div>
+
+            <div class="closing-note">
+              <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+              <p>Fresh ingredients. Warm hospitality. Memorable meals.</p>
+            </div>
+            <a class="back-to-top" href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Back to top ↑</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer text-center">
+    <p>Food, LLC <span aria-hidden="true">•</span> Made with care, served with joy.</p>
+  </footer>
+
+  <!-- jQuery and Bootstrap JavaScript are needed for the mobile dropdown -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

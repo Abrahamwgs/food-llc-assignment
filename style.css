@@ -1,0 +1,311 @@
+/* Food, LLC — custom styles. Bootstrap 3 handles the responsive grid and navbar. */
+:root {
+  --ink: #29251f;
+  --muted: #746b60;
+  --cream: #f8f5ef;
+  --paper: #fffdf9;
+  --accent: #b84b2f;
+  --accent-dark: #81311f;
+  --line: #e8dfd3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--cream);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Navbar scrolls naturally with the page; it is intentionally not fixed. */
+.navbar-default {
+  margin-bottom: 0;
+  min-height: 76px;
+  border: 0;
+  border-bottom: 1px solid #e4d7c7;
+  border-radius: 0;
+  background: #fffdf9;
+  box-shadow: 0 3px 16px rgba(45, 33, 21, 0.04);
+}
+
+.navbar-shell {
+  padding-left: 5.2%;
+  padding-right: 5.2%;
+}
+
+.navbar-default .navbar-brand {
+  height: 76px;
+  padding-top: 25px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: var(--accent);
+}
+
+.navbar-default .navbar-toggle {
+  margin-top: 20px;
+  border-color: #d9c7b5;
+  border-radius: 7px;
+  background: #fff8ef;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background: #f3e7d8;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background: var(--accent-dark);
+}
+
+.navbar-collapse {
+  border-top: 0;
+  box-shadow: none;
+}
+
+.navbar-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: var(--ink);
+  text-align: center;
+  font-weight: 600;
+}
+
+.page-content {
+  padding: 0 5.2% 54px;
+}
+
+.page-title {
+  margin: 42px 0 34px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+}
+
+.menu-panel {
+  position: relative;
+  min-height: 1000px;
+  padding: 44px 6.2% 36px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(184, 75, 47, 0.07), transparent 35%),
+    var(--paper);
+  box-shadow: 0 16px 40px rgba(55, 38, 20, 0.06);
+}
+
+.section-eyebrow {
+  margin-bottom: 13px;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+
+.menu-panel h2 {
+  max-width: 680px;
+  margin: 0 0 17px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+}
+
+.intro {
+  max-width: 760px;
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.menu-feature {
+  display: flex;
+  gap: 22px;
+  padding: 27px 0;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 20px;
+}
+
+.feature-number {
+  flex: 0 0 46px;
+  color: #c8a995;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  line-height: 1.35;
+}
+
+.menu-feature h3 {
+  margin: 0 0 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.menu-feature p {
+  max-width: 740px;
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.menu-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 30px;
+  background: #f6eae0;
+  color: var(--accent-dark);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.closing-note {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 20px 22px;
+  border-radius: 12px;
+  background: #f7f0e7;
+  color: var(--accent-dark);
+}
+
+.closing-note .glyphicon {
+  font-size: 21px;
+}
+
+.closing-note p {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.back-to-top {
+  display: inline-block;
+  margin-top: 25px;
+  color: var(--accent-dark);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.site-footer {
+  padding: 24px 15px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer span {
+  padding: 0 5px;
+  color: var(--accent);
+}
+
+/* Mobile: the expanded dropdown spans the full browser width. */
+@media (max-width: 767px) {
+  .navbar-shell {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .navbar-default .navbar-brand {
+    font-size: 24px;
+  }
+
+  .navbar-collapse {
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 0;
+    border-top: 1px solid #e4d7c7;
+    background: #f3e8da;
+  }
+
+  .navbar-nav {
+    margin: 0;
+  }
+
+  .navbar-default .navbar-nav > li {
+    border-bottom: 1px solid #e4d7c7;
+  }
+
+  .navbar-default .navbar-nav > li:last-child {
+    border-bottom: 0;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    padding: 12px 15px;
+  }
+
+  .page-content {
+    padding: 0 15px 35px;
+  }
+
+  .page-title {
+    margin: 31px 0 25px;
+    font-size: 35px;
+  }
+
+  .menu-panel {
+    min-height: 1000px;
+    padding: 30px 22px;
+    border-radius: 14px;
+  }
+
+  .menu-panel h2 {
+    font-size: 28px;
+  }
+
+  .intro {
+    font-size: 15px;
+  }
+
+  .menu-feature {
+    gap: 13px;
+    padding: 24px 0;
+  }
+
+  .feature-number {
+    flex-basis: 32px;
+    font-size: 20px;
+  }
+
+  .menu-feature h3 {
+    font-size: 23px;
+  }
+
+  .closing-note {
+    align-items: flex-start;
+    padding: 16px;
+  }
+}
